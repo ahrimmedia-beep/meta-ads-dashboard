@@ -1,0 +1,9 @@
+[project]
+name = "meta-ads-dashboard-api-selected"
+version = "1.0.0"
+description = "Selected pure functions from the Meta Ads dashboard API. Viewing only."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -4,6 +4,8 @@
 
 Dashboard for a Meta ad account that explains every metric in plain language. It shows spend, reach, cost per result and frequency for a chosen period, and puts what needs attention at the top. It only reads data. It never changes the ads.
 
+![Overview page: share of the audience reached, key numbers, the What matters now list and impressions by hour](docs/screenshots/overview.png)
+
 ## The problem
 
 Ads Manager shows dozens of columns in ad jargon. A business owner who runs ads but does not work in Ads Manager every day cannot tell which number is bad or what to do about it. Ads Manager also does not say when a video has enough data to be judged, so a video can be turned off too early, after a few hundred views.
@@ -16,6 +18,30 @@ Ads Manager shows dozens of columns in ad jargon. A business owner who runs ads 
 - A glossary of 50 Ads Manager terms. Many of them show their current value from the campaign.
 - A commands page that runs a fixed list of read-only reports. Nothing on the dashboard can change the ads.
 - A Python API that reads Meta, caches the answers and turns the numbers into signals by a rules file.
+
+## Screenshots
+
+The screenshots use demo data: made-up account, campaign and ad IDs, scaled numbers and example thresholds.
+
+**Funnel and videos.** From the estimated audience to people who wrote in Direct. Each video gets a verdict only after enough impressions.
+
+![Funnel from audience to messages, video status grid and hook rate per video](docs/screenshots/funnel-videos.png)
+
+**Campaign path and account log.** Control points by date, placements and the account's own event log in Dubai time.
+
+![Campaign path with control points, placements split and account event log](docs/screenshots/path-log.png)
+
+**Table in the shape of Ads Manager.** Same columns as Meta, with a translation and a plain explanation on hover.
+
+![Ads table with English column names, Russian translations and a hover explanation of cost per result](docs/screenshots/ads-manager.png)
+
+**Glossary.** 50 Ads Manager terms, many with their current value from the campaign.
+
+![Glossary cards grouped by topic with current values](docs/screenshots/glossary.png)
+
+**Dark theme.**
+
+![Overview page in dark theme](docs/screenshots/overview-dark.png)
 
 ## How it works
 
